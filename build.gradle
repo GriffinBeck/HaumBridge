@@ -2,6 +2,11 @@ plugins {
     id 'java'
 }
 
+plugins {
+  id "org.sonarqube" version "3.3"
+}
+
+
 group 'me.griffinbeck'
 version '0.1-SNAPSHOT'
 
@@ -33,4 +38,12 @@ dependencies {
 
 test {
     useJUnitPlatform()
+}
+
+sonarqube {
+  properties {
+    property "sonar.projectKey", "GriffinBeck_haumbridge"
+    property "sonar.organization", "griffinbeck"
+    property "sonar.host.url", "https://sonarcloud.io"
+  }
 }
