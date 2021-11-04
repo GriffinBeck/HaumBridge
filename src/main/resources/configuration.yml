@@ -1,0 +1,13 @@
+mqtt:
+  url: locahost
+  clientid:
+  user:
+  pass:
+  auto-reconnect: true
+
+
+database:
+  host: localhost
+  port: 3306
+  user: haumbridge
+  pass: haumbridge
